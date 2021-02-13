@@ -6,12 +6,12 @@ Docker containers to run symfony project
 
 1\. Clone docker repository
 ```
-git clone https://github.com/ignas-zil/docker.git docker/
+git clone https://github.com/ignas-zil/x-docker.git docker/
 ```
 2\. Setup environment variables inside _docker/.env_ file  
 3\. Clone symfony project code into _src_ directory
 ```
-git clone https://github.com/ignas-zil/adeoweb.git src/
+git clone https://github.com/ignas-zil/x-app.git src/
 ```
 4\. Setup _DATABASE_URL_ inside _src/.env_ file  
 5\. Boot up containers
@@ -28,10 +28,3 @@ docker-compose run php-fpm composer install
 ```
 docker-compose run php-fpm bin/console doctrine:migrations:migrate
 ```
-8\. Run fixtures
-```
-docker-compose run php-fpm bin/console doctrine:fixtures:load
-```
-
-
-
